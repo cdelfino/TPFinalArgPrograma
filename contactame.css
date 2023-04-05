@@ -44,20 +44,28 @@ input, textarea {
     font-size: 16px;
   }
 
-input[type="submit"]{
+.enviar-formulario{
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    display: block;
 }
 
-  input[type="submit"]:hover {
+ .enviar-formulario:hover {
     background-color: #3E8E41;
+    border-bottom: none !important;
+    font-family: Arial, sans-serif;
+    color: rgb(170, 170, 170) !important;
 }
 
-  h2 {
+h2 {
   font-size: 28px;
   color: #333;
   margin-bottom: 16px;
@@ -82,7 +90,7 @@ a{
   
 a:hover {
     color: rgb(200, 0, 255);;
-    border-bottom: 2px solid rgb(200, 0, 255);;
+    border-bottom: 2px solid rgb(200, 0, 255);
     transform: scale(1.1);
 }
 
