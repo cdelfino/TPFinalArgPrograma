@@ -1,0 +1,134 @@
+/*FUENTES UTILIZADAS*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{ /*remover estilos por default de boostrap que resultan inconvenientes para el diseño*/
+    --titulo: 'Cabin', sans-serif;
+    --texto: 'Lato', sans-serif;
+}
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    background-position: center;
+    font-family: var(--texto);
+}
+
+.row{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+p{
+    margin-bottom: 0 !important;
+}
+
+.my-container{
+    padding: 20px;
+}
+  
+.titulo{
+    font-family: var(--titulo);
+}
+
+.foto-curriculum{
+    width: 270px;
+}
+
+.linea::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.6px;
+    border-radius: 30px;
+    background-color: rgb(155 155 155);
+}
+
+a{
+    text-decoration: none;
+    font-family: var(--titulo);
+}
+
+button{
+    border: none;
+}
+
+.contactame{
+    background-color: rgb(41, 88, 72);
+}
+.contactame:hover{
+    background-color: rgb(131, 138, 131);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+
+.info-curriculum{
+    text-align: left;
+}
+
+.exp-laboral{
+    position: relative;
+    padding-left: 2rem;
+}
+
+.exp-laboral::before{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 95%;
+    background: rgb(155 155 155);
+    left: 6px;
+    top: 4px;
+    position: absolute;
+}
+
+.item{
+    position: relative;
+}
+
+.item:before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -32px;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    border: 4px solid rgb(115, 115, 115);
+    background: white;
+    border-radius: 50%;
+}
+
+.carrera{
+    font-weight: 600;
+}
+
+.btn-secondary:hover{
+    background-color: #ffff;
+    color: #343a40;
+}
+
+.transition {
+    transition: all 0.2s ease-in-out;
+}
+  
+.transition:hover, .transition:focus {
+    color: #ababab;
+    transform: scale(1.05);
+}
+
+.habilidades{
+    background-color: lightgrey !important;
+}
+
+.resume-award-name{
+    font-weight: 600;
+}
